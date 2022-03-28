@@ -1,0 +1,71 @@
+.i-container {
+	display: flex;
+	background-color: #2d2d2de0;
+
+	height: 100vh;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.i-wrapper{
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+}
+
+.i-welcome {
+	height: 150px;
+	overflow: hidden;
+	display: flex;
+}
+
+.i-welcome-wrapper {
+	height: 100%;
+	animation: move 45s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+	10%{
+		transform: translateY(-150px);
+	}
+	20%{
+		transform: translateY(-300px);
+	}
+	30%{
+		transform: translateY(-450px);
+	}
+	40%{
+		transform: translateY(-600px);
+	}
+	50%{
+		transform: translateY(-750px);
+	}
+	60%{
+		transform: translateY(-900px);
+	}
+	70%{
+		transform: translateY(-1050px);
+	}
+	80%{
+		transform: translateY(-1200px);
+	}
+	90%{
+		transform: translateY(-1350px);
+	}
+	100%{
+		transform: translateY(-1500px);
+	}
+}
+
+.i-welcome-item {
+	height: 150px;
+	font-size: 130px;
+	font-weight: bold;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
