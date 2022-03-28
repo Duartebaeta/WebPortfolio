@@ -3,7 +3,7 @@ import "./intro.css";
 const Intro = () => {
 	return [
 		<div className="i-container">
-			<div className="i-wrapper"> 
+			<div className="i-wrapper">
 				<div className="i-welcome">
 					<div className="i-welcome-wrapper">
 						<div className="i-welcome-item">Hello;</div>
@@ -19,7 +19,7 @@ const Intro = () => {
 						<div className="i-welcome-item">Assalam u Alaikum;</div>
 					</div>
 				</div>
-				<h1 className="i-name">My Name Is Duarte Baeta</h1>
+				<h1 className="i-name">My Name Is Duarte Baeta.</h1>
 			</div>
 		</div>,
 	];

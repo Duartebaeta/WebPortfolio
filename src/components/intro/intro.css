@@ -1,6 +1,6 @@
 .i-container {
 	display: flex;
-	background-color: #2d2d2de0;
+	background-color: #D7CEC7;
 
 	height: 100vh;
 
@@ -24,7 +24,7 @@
 
 .i-welcome-wrapper {
 	height: 100%;
-	animation: move 45s ease-in-out infinite alternate;
+	animation: move 46s ease-in-out infinite alternate;
 }
 
 @keyframes move {
@@ -56,7 +56,7 @@
 		transform: translateY(-1350px);
 	}
 	100%{
-		transform: translateY(-1500px);
+		transform: translateY(-1510px);
 	}
 }
 
@@ -68,4 +68,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: #76323F;
+}
+
+.i-name {
+	color: #565656;
 }
