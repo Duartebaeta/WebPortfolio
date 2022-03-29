@@ -6,7 +6,8 @@
 
 .nav-container {
 	height: 100px;
-	background-color:#76323F;
+	/* background-color:#76323F; */
+	background-color: #0e1111;
 
 	display: flex;
 
@@ -33,10 +34,11 @@
 
 	padding: 30px;
 	align-items: center;
-	color: #C09F80;
+	/* color: #D7CEC7; */
+	color: #bb8d62;
 
 	font-size: 25px;
-	font-weight: bold;
+	cursor: pointer;
 }
 
 .nav-paths-in {

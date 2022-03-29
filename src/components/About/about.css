@@ -4,10 +4,11 @@
 }
 
 .a-container {
-	position: absolute;
+	overflow: hidden;
 	width: 100%;
 	height: 100vh;
-	background-color: #76323F;
+	/* background-color: #565656; */
+	background-color: #0e1111;
 }
 
 .a-text-box {
@@ -22,11 +23,18 @@
 	flex-direction: column;
 }
 
+.a-text-image {
+	display: flex;
+
+	flex-direction: row;
+	height: 100%;
+}
+
 .a-title {
 	padding: 20px 0;
 	font-size: 30px;
 	font-weight: bold;
-	color: #C09F80;
+	color: #bb8d62;
 
 	display: flex;
 	justify-content: center;
@@ -38,7 +46,9 @@
 	display: flex;
 
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	width: 50%;
 }
 
 .a-selector-title {
@@ -53,6 +63,35 @@
 	justify-content: space-between;
 	color: #565656;
 }
+
+input[type="radio"] {
+	appearance: none;
+	background-color: #D7CEC7;
+	margin: 0;
+	font: inherit;
+	color: currentColor;
+	width: 1.15em;
+	height: 1.15em;
+	border: 0.15em solid #bb8d62;
+	border-radius: 50%;
+	display: grid;
+	place-content: center;
+}
+
+input[type="radio"]::before {
+	content: "";
+	width: 0.65em;
+	height: 0.65em;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em var(--form-control-color);
+	background-color: #bb8d62;
+}
+  
+  input[type="radio"]:checked::before {
+	transform: scale(1);
+  }
 
 .a-selector-shortest {
 	display: flex;
@@ -80,79 +119,18 @@
 	text-align: center;
 }
 
-.a-others {
-	padding-top: 30px;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 40%;
-	padding: 30px 50px 0px 50px;
-}
-
-.a-skills {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.a-image-container {
 	width: 50%;
-}
+	height: 100%;
 
-.a-aoi {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	width: 50%;
-}
-
-.a-skills-title {
-	font-weight: bold;
-	color: #C09F80;
-}
-
-.a-skills-comfortable {
-	display: flex;
-
-	flex-direction: column;
-	align-items: center;
-}
-
-.a-skills-experimenting {
-	display: flex;
-
-	flex-direction: column;
-	align-items: center;
-}
-
-.a-skills-comfortable-logos{
-	display: flex;
-
-	flex-direction: row;
 	justify-content: center;
 }
 
-.a-skills-experimenting-logos {
-	display: flex;
-
-	flex-direction: row;
-	justify-content: center;
-}
-
-.a-skills-little-title {
-	padding-top: 10px;
-	font-weight: 300;
-}
-
-.lang-logo {
-	display: flex;
-
-	padding: 7px;
-	width: 10%;
-}
-
-.a-aoi-text {
-	padding-top: 10px;
-
-	font-weight: 300;
-	font-size: 14.5px;
-	text-align: center;
+.a-image {
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+	border-radius: 1em;
 }
