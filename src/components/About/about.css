@@ -7,12 +7,12 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100vh;
-	/* background-color: #565656; */
-	background-color: #0e1111;
+	background-color: rgb(53, 50, 56);
+	/* background-color: #0e1111; */
 }
 
 .a-text-box {
-	background-color: #D7CEC7;
+	background-color: rgb(255, 238, 214);
 	width: 80%;
 	height: 80%;
 	margin: 6rem 10rem;
@@ -66,7 +66,7 @@
 
 input[type="radio"] {
 	appearance: none;
-	background-color: #D7CEC7;
+	background-color: rgb(255, 238, 214);
 	margin: 0;
 	font: inherit;
 	color: currentColor;

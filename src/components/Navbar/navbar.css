@@ -6,8 +6,8 @@
 
 .nav-container {
 	height: 100px;
-	/* background-color:#76323F; */
-	background-color: #0e1111;
+	background-color: rgb(53, 50, 56);
+	/* background-color: #0e1111; */
 
 	display: flex;
 
@@ -34,7 +34,6 @@
 
 	padding: 30px;
 	align-items: center;
-	/* color: #D7CEC7; */
 	color: #bb8d62;
 
 	font-size: 25px;
@@ -53,15 +52,15 @@
 
 .nav-about {
 	padding: 20px;
-	color: #D7CEC7;
+	color: rgb(255, 238, 214);
 }
 
 .nav-projects {
 	padding: 20px;
-	color: #D7CEC7;
+	color: rgb(255, 238, 214);
 }
 
 .nav-contact {
 	padding: 20px;
-	color: #D7CEC7;
+	color: rgb(255, 238, 214);
 }

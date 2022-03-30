@@ -3,9 +3,22 @@
 	padding: 0;
 }
 
-.d-container {
+.p-container {
 	display: flex;
+	flex-direction: column;
 
 	height: 100vh;
-	background-color: #D7CEC7;
+	background-color: rgb(255, 238, 214);
+}
+
+.p-title {
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.p-card-container {
+	display: flex;
+
+	flex-direction: row;
+	justify-content: space-around;
 }
