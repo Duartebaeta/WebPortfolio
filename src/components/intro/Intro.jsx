@@ -2,7 +2,7 @@ import "./intro.css";
 
 const Intro = () => {
 	return [
-		<div className="i-container">
+		<div className="i-container" id="intro">
 			<div className="i-wrapper">
 				<div className="i-welcome">
 					<div className="i-welcome-wrapper">

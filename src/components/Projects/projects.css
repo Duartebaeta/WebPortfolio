@@ -4,6 +4,7 @@
 }
 
 .p-container {
+	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
 
@@ -11,9 +12,20 @@
 	background-color: rgb(255, 238, 214);
 }
 
+.p-cards {
+	padding-top: 50px;
+}
+
 .p-title {
 	text-align: center;
+	color: #bb8d62;
+	font-weight: bold;
+}
+
+.p-small-description {
+	text-align: center;
 	padding-bottom: 25px;
+	font-weight: 300;
 }
 
 .p-card-container {
@@ -21,4 +33,28 @@
 
 	flex-direction: row;
 	justify-content: space-around;
+}
+
+.p-github {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 50px;
+}
+
+.p-link {
+	text-decoration: none;
+	text-align: center;
+
+	display: block;
+	background-color: #353238;
+	color: #bb8d62;
+
+	border-radius: 1em;
+
+	width: 20%;
+	padding: 10px;
+	position: absolute;
 }

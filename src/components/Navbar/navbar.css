@@ -1,13 +1,13 @@
 * {
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 
 .nav-container {
 	height: 100px;
-	background-color: rgb(53, 50, 56);
-	/* background-color: #0e1111; */
+	background-color: #353238;
 
 	display: flex;
 
@@ -38,6 +38,8 @@
 
 	font-size: 25px;
 	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
 }
 
 .nav-paths-in {
@@ -50,17 +52,12 @@
 	padding: 30px;
 }
 
-.nav-about {
-	padding: 20px;
-	color: rgb(255, 238, 214);
-}
-
-.nav-projects {
-	padding: 20px;
-	color: rgb(255, 238, 214);
-}
-
+.nav-about,
+.nav-projects,
 .nav-contact {
 	padding: 20px;
-	color: rgb(255, 238, 214);
+	color: white;
+
+	text-decoration: none;
+	text-align: center;
 }

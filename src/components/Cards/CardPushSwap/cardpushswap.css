@@ -1,9 +1,9 @@
 :root {
-	--line-button-color: #39ff14;
-	--text-color: #ffffff;
-	--button-text-color: #000000;
-	--button-hover-background: #ffffff;
-	--button-hover-text: #000000;
+	--line-button-color-ps: #bb8d62;
+	--text-color-ps: #ffffff;
+	--button-text-color-ps: #000000;
+	--button-hover-background-ps: #ffffff;
+	--button-hover-text-ps: #000000;
 }
 
 *,
@@ -12,12 +12,13 @@
 	box-sizing: border-box;
 }
 
-.c-card {
-	background-image: url("../../../img/background.jpg");
+.cps-card {
+	background-image: url("../../../img/matrix-concept-black-white-background-2409372.jpeg");
 	background-size: cover;
 	padding: 12rem 0 0;
 	max-width: 35ch;
-	color: var(--text-color);
+	height: 100%;
+	color: var(--text-color-ps);
 
 	border-radius: 1em;
 
@@ -25,44 +26,44 @@
 	overflow: hidden;
 }
 
-.c-card:hover,
-.c-card:focus-within {
+.cps-card:hover,
+.cps-card:focus-within {
 	transform: scale(1.05);
 }
 
-.c-card-content {
-	--padding: 1.5rem;
-	padding: var(--padding);
+.cps-card-content {
+	--padding-ps: 1.5rem;
+	padding: var(--padding-ps);
 	background: linear-gradient(
 		hsl(0 0% 0% / 0),
-		hsl(0 0% 0% / 0.2) 10%,
+		hsl(0 0% 0% / 0.7) 10%,
 		hsl(0 0% 0% / 0.94)
 	);
 }
 
-.c-title {
+.cps-title {
 	position: relative;
 	width: max-content;
 }
 
-.c-title::after {
+.cps-title::after {
 	content: "";
 	position: absolute;
 	height: 4px;
-	left: calc(var(--padding) * -1);
+	left: calc(var(--padding-ps) * -1);
 	bottom: -2px;
-	width: calc(100% + var(--padding));
-	background-color: var(--line-button-color);
+	width: calc(100% + var(--padding-ps));
+	background-color: var(--line-button-color-ps);
 
 }
 
-.c-button {
+.cps-button {
 	cursor: pointer;
 	text-decoration: none;
-	color: var(--button-text-color);
+	color: var(--button-text-color-ps);
 
 	display: inline-block;
-	background-color: var(--line-button-color);
+	background-color: var(--line-button-color-ps);
 	font-size: 20px;
 	padding: 0.10em 0.5em;
 
@@ -74,55 +75,55 @@
 	text-align: center;
 }
 
-.c-button:hover,
-.c-button:focus {
-	background-color: var(--button-hover-background);
-	color: var(--button-hover-text);
+.cps-button:hover,
+.cps-button:focus {
+	background-color: var(--button-hover-background-ps);
+	color: var(--button-hover-text-ps);
 }
 
-.c-content {
+.cps-content {
 	padding: 20px 0;
 }
 
 @media (hover) 
 {
-	.c-card-content {
+	.cps-card-content {
 		transform: translateY(70%);
 		transition: transform 500ms ease-in-out;
 	}
-	.c-card:hover .c-card-content,
-	.c-card:focus-within .c-card-content {
+	.cps-card:hover .cps-card-content,
+	.cps-card:focus-within .cps-card-content {
 		transform: translateY(0);
 		transition-delay: 450ms;
 	}
 
-	.c-card:focus-within .c-card-content {
+	.cps-card:focus-within .cps-card-content {
 		transition-duration: 0ms;
 	}
 
-	.c-card-content > *:not(.c-title) {
+	.cps-card-content > *:not(.cps-title) {
 		opacity: 0;
 		transition: opacity 450ms ease-in;
 	}
 
-	.c-card:hover .c-card-content > *:not(.c-title),
-	.c-card:focus-within .c-card-content > *:not(.c-title) {
+	.cps-card:hover .cps-card-content > *:not(.cps-title),
+	.cps-card:focus-within .cps-card-content > *:not(.cps-title) {
 		opacity: 1;
 		transition-delay: 860ms;
 	}
 
-	.c-card:focus-within .c-card-content > *:not(.c-title) {
+	.cps-card:focus-within .cps-card-content > *:not(.cps-title) {
 		transition-delay: 400ms;
 	}
 
-	.c-title::after {
+	.cps-title::after {
 		transform: scaleX(0);
 		transform-origin: left;
 		transition: transform 500ms ease;
 	}
 
-	.c-card:hover .c-title.c-title::after,
-	.c-card:focus-within .c-title.c-title::after {
+	.cps-card:hover .cps-title.cps-title::after,
+	.cps-card:focus-within .cps-title.cps-title::after {
 		transform: scaleX(1);
 	}
 }

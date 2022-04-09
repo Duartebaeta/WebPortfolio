@@ -17,7 +17,7 @@ const About = () => {
 	const [txt, setTxt] = useState("mediumText");
 
 	return (
-		<div className="a-container">
+		<div className="a-container" id="about">
 			<div className="a-text-box">
 				<div className="a-text-image">
 					<div className="a-selector">

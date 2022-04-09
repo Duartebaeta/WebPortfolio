@@ -4,15 +4,21 @@ const Navbar = () => {
 	return (
 		<div className="nav-container">
 			<div className="nav-home">
-				<div className="nav-home-name" onClick={console.log("clicks")}>
+				<a href="#intro" className="nav-home-name">
 					Duarte Baeta
-				</div>
+				</a>
 			</div>
 			<div className="nav-paths">
 				<div className="nav-paths-in">
-					<div className="nav-about">About Me</div>
-					<div className="nav-projects">Projects</div>
-					<div className="nav-contact">Contact</div>
+					<a href="#about" className="nav-about">
+						About Me
+					</a>
+					<a href="#projects" className="nav-projects">
+						Projects
+					</a>
+					<a href="#contacts" className="nav-contact">
+						Contacts
+					</a>
 				</div>
 			</div>
 		</div>
